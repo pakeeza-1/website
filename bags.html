@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendVault</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!--bootstrap links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--bootstrap links-->
+  <!--fonts links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!--fonts links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!--icons link-->
+</head>
+<body>
+  <div class="all-content">
+  <!--navbar start-->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="logo">TrendVault</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" style="color:white; font-size: 23px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 20px;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collection.html">Collection</a>
+         </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+         <div class="cart-btn">
+          <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#cartModal">
+            <i class="fa-solid fa-cart-shopping"></i> Cart <span id="cart-count">0</span>
+          </button>
+        </div>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--navbar ends-->
+
+    <main class="shop">
+        <h1 class="page-title">Shop Our Latest Styles</h1>
+        <p class="description">Explore a wide range of premium-quality fashion items curated just for you.</p>
+        <h3 class="page-title">Woman Bags</h3>
+        <div class="pro-grid">
+            <div class="product-item">
+                <img src="bag1.jpg" alt="White shoulder bag">
+                <h2>White Shoulder Bag</h2>
+                <p>$50.00</p>
+                <button class="add-to-cart-btn btn btn-dark"  data-name="Formal Wear" data-name="Casual Wear" data-price="50" data-image="bag1.jpg">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="bag3.jpg" alt="Pink Shoulder Bag">
+                <h2>Pink Shoulder Bag"</h2>
+                <p>$85.00</p>
+                <button class="add-to-cart-btn btn btn-dark"  data-name="Formal Wear"  data-name="Ready-to-wear " data-price="85" data-image="bag3.jpg">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="bag8.jpg" alt="Brown Crossbody bag">
+                <h2>Brown Crossbody bag</h2>
+                <p>$100.00</p>
+                <button class="add-to-cart-btn btn btn-dark"  data-name="Formal Wear" data-name="Boots" data-price="100" data-image="bag8.jpg">Add to Cart</button>
+             </div>
+             <div class="product-item">
+                <img src="bag7.jpg" alt="Brown Handle Bag">
+                <h2>Brown Handle Bag</h2>
+                <p>$93.00</p>
+                <button class="add-to-cart-btn btn btn-dark"  data-name="Formal Wear" data-name="Heels" data-price="93" data-image="bag7.jpg">Add to Cart</button>
+             </div>
+            
+             <div class="product-item">
+                <img src="product 5.jpg" alt="Tote-Bags">
+                <h2>Tote Bag</h2>
+                <p>$55.00</p>
+                <button class="add-to-cart-btn btn btn-dark"  data-name="Formal Wear"  data-name="Tote Bags" data-price="55" data-image="product 5.jpg">Add to Cart</button>
+             </div>
+             <div class="product-item">
+                <img src="product 6.jpg" alt="Beige Crossbody bag">
+                <h2>Beige Crossbody bag</h2>
+                <p>$25.00</p>
+                <button class="add-to-cart-btn btn btn-dark"  data-name="Formal Wear" data-name="Cross body bags" data-price="25" data-image="product 6.jpg">Add to Cart</button>
+             </div>
+             <div class="product-item">
+                <img src="bag6.jpg" alt="Maroon Handle Bag">
+                <h2>Maroon Handle Bag</h2>
+                <p>$75.00</p>
+                <button class="add-to-cart-btn btn btn-dark"  data-name="Formal Wear" data-name="Glasses" data-price="75" data-image="bag6.jpg">Add to Cart</button>
+             </div>
+             <div class="product-item">
+                <img src="bag5.jpg" alt="Mini Bag">
+                <h2>Mini Bag</h2>
+                <p>$20.00</p>
+                <button class="add-to-cart-btn btn btn-dark"  data-name="Formal Wear"  data-name="Jewelry" data-price="20" data-image="bag5.jpg">Add to Cart</button>
+             </div>
+            
+             <div class="product-item">
+                <img src="bag4.jpg" alt="Black clutch">
+                <h2>Black Clutch</h2>
+                <p>$125.00</p>
+                <button class="add-to-cart-btn btn btn-dark"  data-name="Formal Wear" data-price="125" data-image="bag4.jpg">Add to Cart</button>
+             </div>
+         <div>
+
+           
+    </main>
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul id="cart-items" class="list-group">
+              <!-- Cart items will be added here dynamically -->
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" id="checkout-btn" class="btn btn-primary">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cart Modal ends -->
+  </div>
+    <!--footer start-->
+<footer id="footer">
+    <div class="footer-logo text-centre">TrendVault</div>
+    <div class="social-links text-centre">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credits text-centre">
+       Designed By <a href=""><span>SA Coding</span></a>
+    </div>
+    <div class="copyright text-centre">
+      &copy;Copyright <strong><span></span>TrendVault</strong>. All Rights reserved
+    </div>
+  </footer>
+  <!--footer ends-->
+  
+   <!-- Bootstrap and Custom JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script>
+       let cart = [];
+ 
+       // Add to Cart function
+       document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+           button.addEventListener('click', function() {
+               const productName = this.getAttribute('data-name');
+               const productPrice = this.getAttribute('data-price');
+               const productImage = this.getAttribute('data-image');
+               
+               // Add item to the cart array
+               cart.push({ name: productName, price: productPrice, image: productImage });
+ 
+               // Update the cart count
+               document.getElementById('cart-count').textContent = cart.length;
+ 
+               // Add the item to the modal
+               updateCartModal();
+           });
+       });
+ 
+       // Update the cart modal with items
+       function updateCartModal() {
+           const cartItemsList = document.getElementById('cart-items');
+           cartItemsList.innerHTML = ''; // Clear the existing cart items
+ 
+           cart.forEach(item => {
+               const li = document.createElement('li');
+               li.classList.add('list-group-item');
+               li.innerHTML = `
+                   <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px;">
+                   <span>${item.name}</span> - $${item.price}
+               `;
+               cartItemsList.appendChild(li);
+           });
+       }
+ 
+       // Checkout function (optional)
+       document.getElementById('checkout-btn').addEventListener('click', function() {
+           alert('Proceeding to checkout...');
+           // You can add more checkout logic here
+       });
+   </script>
+ </body>
+ </html>
+ 

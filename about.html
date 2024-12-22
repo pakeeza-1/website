@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendVault</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!--bootstrap links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--bootstrap links-->
+  <!--fonts links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!--fonts links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!--icons link-->
+</head>
+<body>
+  <div class="all-content">
+  <!--navbar start-->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="logo">TrendVault</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" style="color:white; font-size: 23px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 20px;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="collection.html">Collection</a>
+         </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+
+         <div class="cart-btn">
+          <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#cartModal">
+            <i class="fa-solid fa-cart-shopping"></i> Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--navbar ends-->
+  
+
+<!--About section starts-->
+<section id="about">
+    <div class="container">
+      <div class="heading">About <span>Us</span></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="card.png" alt="card">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3>What makes our outfits special?</h3>
+          <p>At TrendVault, we blend timeless elegance with modern trends to create outfits that stand out. Each piece is crafted with care, using premium fabrics and unique designs that reflect your individuality.
+            <br><br> our accessories add the perfect finishing touch to your style, while our footwear combines fashion and comfort to complete your look effortlessly.
+            <br><br> Whether it’s casual wear or statement fashion, our collections are made to make you feel confident and stylish every day.
+          </p>
+          <form class="d-flex">
+            <button class="btn btn-dark" type="submit">Learn More</button>
+           </form>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  <!--About section ends-->
+  <!--footer start-->
+<footer id="footer">
+    <div class="footer-logo text-centre">TrendVault</div>
+    <div class="social-links text-centre">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credits text-centre">
+       Designed By <a href=""><span>SA Coding</span></a>
+    </div>
+    <div class="copyright text-centre">
+      &copy;Copyright <strong><span></span>TrendVault</strong>. All Rights reserved
+    </div>
+  </footer>
+  <!--footer ends-->
+  
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection - TrendVault</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #800020;
+            --secondary-color: #4a0012;
+            --accent-color: #fff1f3;
+            --text-color: #2c1810;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfbfb;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            color: #fff !important;
+            font-weight: 700;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+        
+        .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+            font-weight: 500;
+            padding: 0.5rem 1.2rem !important;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent-color) !important;
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            padding: 6rem 0;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('/api/placeholder/1200/400') center/cover;
+            opacity: 0.1;
+        }
+        
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        /* Product Cards */
+        .product-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(128, 0, 32, 0.15);
+        }
+        
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        
+        .product-card:hover .card-img-top {
+            transform: scale(1.05);
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+            background: white;
+        }
+        
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn-shop {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-shop:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 15px;
+            font-size: 1.8rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+        
+        /* Custom Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        /* Category Badge */
+        .category-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TrendVault</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="collection.html">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart me-1"></i>Cart</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search collections...">
+                        <button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Elevate Your Style</h1>
+            <p class="lead mb-4">Discover our curated collection for the modern trendsetter</p>
+            <div class="d-flex justify-content-center gap-3">
+                <span class="badge bg-light text-dark p-2">Premium Quality</span>
+                <span class="badge bg-light text-dark p-2">Latest Trends</span>
+                <span class="badge bg-light text-dark p-2">Exclusive Designs</span>
+            </div>
+        </div>
+    </section>
+<div class="shop">
+    <!-- Products Grid -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Women's Wear -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <span class="category-badge">New Arrivals</span>
+                    <img src="https://drinkco.club/web/image/product.template/105/image_1024?unique=1dff141" class="card-img-top" alt="Women's Wear">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Women's Wear</h5>
+                        <p class="card-text text-muted">Elevate your wardrobe with our latest collection</p>
+                        <a href="womenwears.html" class="btn btn-shop">
+                            Shop Collection <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accessories -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <span class="category-badge">Trending</span>
+                    <img src="https://drinkco.club/web/image/product.template/105/image_1024?unique=1dff141" class="card-img-top" alt="Accessories">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Accessories</h5>
+                        <p class="card-text text-muted">Complete your look with perfect accents</p>
+                        <a href="access.html" class="btn btn-shop">
+                            Shop Collection <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Women's Footwear -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <span class="category-badge">Featured</span>
+                    <img src="https://drinkco.club/web/image/product.template/105/image_1024?unique=1dff141" class="card-img-top" alt="Women's Footwear">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Women's Footwear</h5>
+                        <p class="card-text text-muted">Step out in style with our footwear collection</p>
+                        <a href="womenfootwear.html" class="btn btn-shop">
+                            Shop Collection <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Men's Wear -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <span class="category-badge">Best Sellers</span>
+                    <img src="https://drinkco.club/web/image/product.template/105/image_1024?unique=1dff141" class="card-img-top" alt="Men's Wear">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Men's Wear</h5>
+                        <p class="card-text text-muted">Redefine your style with our menswear</p>
+                        <a href="menswear.html" class="btn btn-shop">
+                            Shop Collection <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Men's Footwear -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <span class="category-badge">Premium</span>
+                    <img src="https://drinkco.club/web/image/product.template/105/image_1024?unique=1dff141" class="card-img-top" alt="Men's Footwear">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Men's Footwear</h5>
+                        <p class="card-text text-muted">Walk confidently with our footwear selection</p>
+                        <a href="menfootwear.html" class="btn btn-shop">
+                            Shop Collection <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bags -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <span class="category-badge">Exclusive</span>
+                    <img src="https://drinkco.club/web/image/product.template/105/image_1024?unique=1dff141" class="card-img-top" alt="Bags">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bags</h5>
+                        <p class="card-text text-muted">Luxury meets functionality in our bag collection</p>
+                        <a href="bags.html" class="btn btn-shop">
+                            Shop Collection <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <h3 class="footer-brand">TrendVault</h3>
+            <div class="social-links mb-4">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8">
+                    <p class="text-light">Subscribe to our newsletter for exclusive updates and offers</p>
+                    <div class="input-group mb-3 w-75 mx-auto">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-light" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="credits mb-3">
+                Designed By <a href="#" class="text-white text-decoration-none">SA Coding</a>
+            </div>
+            <div class="copyright">
+                &copy; 2024 <strong>TrendVault</strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
